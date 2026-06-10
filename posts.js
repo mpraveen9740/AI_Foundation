@@ -167,21 +167,6 @@ llm = ChatOpenAI(
     api_key="ollama",
     model="llama3"
 )
-
-tools = [control_thermostat]
-prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are an intelligent smart home assistant. You help manage appliances efficiently."),
-    MessagesPlaceholder(variable_name="chat_history"),
-    ("human", "{input}"),
-    MessagesPlaceholder(variable_name="agent_scratchpad"),
-])
-
-agent = create_openai_tools_agent(llm, tools, prompt)
-executor = AgentExecutor(agent=agent, tools=tools, verbose=True)</code></pre>
-
-      <h2>Step 3: Running and Extending</h2>
-      <p>Run the script and try typing command sentences like: <em>'It is getting cold, can you set the temperature to 72 degrees?'</em>. The agent parses the semantic intent, resolves the target value, calls the `control_thermostat` function automatically, and reports back. You can expand this framework by adding lighting controls, media playback APIs, and speech-to-text systems!</p>
-    `
   },
   {
     id: "demystifying-transformers-self-attention",
@@ -197,7 +182,7 @@ executor = AgentExecutor(agent=agent, tools=tools, verbose=True)</code></pre>
       role: "Senior Machine Learning Engineer",
       avatar: "AR"
     },
-    content: `
+    content:
       <p class="lead">Since the landmark paper <em>"Attention Is All You Need"</em> was published in 2017, the Transformer architecture has dominated Natural Language Processing. But how does its core engine—<strong>Self-Attention</strong>—actually work mathematically?</p>
       
       <h2>Why Self-Attention Matters</h2>
@@ -309,9 +294,7 @@ class SimpleSelfAttention(nn.Module):
       <h2>Phase 4: Open Source and Networking</h2>
       <p>Showcase your expertise to potential employers by contributing to community libraries (Hugging Face, LangChain, PyTorch) or writing technical summaries of AI papers. Keep your GitHub profile active, share your project updates on LinkedIn, and attend local AI meetups and hackathons. Having a live portfolio of working, deployed projects will set you miles apart from other candidates.</p>
     `
-  }
-];
-
+  },
   {
     id: "python-smart-home-assistant",
     title: "Building a Real-Time Smart Home Assistant with Python and LangChain",
@@ -379,21 +362,6 @@ llm = ChatOpenAI(
     api_key="ollama",
     model="llama3"
 )
-
-tools = [control_thermostat]
-prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are an intelligent smart home assistant. You help manage appliances efficiently."),
-    MessagesPlaceholder(variable_name="chat_history"),
-    ("human", "{input}"),
-    MessagesPlaceholder(variable_name="agent_scratchpad"),
-])
-
-agent = create_openai_tools_agent(llm, tools, prompt)
-executor = AgentExecutor(agent=agent, tools=tools, verbose=True)</code></pre>
-
-      <h2>Step 3: Running and Extending</h2>
-      <p>Run the script and try typing command sentences like: <em>'It is getting cold, can you set the temperature to 72 degrees?'</em>. The agent parses the semantic intent, resolves the target value, calls the `control_thermostat` function automatically, and reports back. You can expand this framework by adding lighting controls, media playback APIs, and speech-to-text systems!</p>
-    `
   },
   {
     id: "demystifying-transformers-self-attention",
@@ -409,7 +377,7 @@ executor = AgentExecutor(agent=agent, tools=tools, verbose=True)</code></pre>
       role: "Senior Machine Learning Engineer",
       avatar: "AR"
     },
-    content: `
+    content: 
       <p class="lead">Since the landmark paper <em>"Attention Is All You Need"</em> was published in 2017, the Transformer architecture has dominated Natural Language Processing. But how does its core engine—<strong>Self-Attention</strong>—actually work mathematically?</p>
       
       <h2>Why Self-Attention Matters</h2>
@@ -561,5 +529,7 @@ class SimpleSelfAttention(nn.Module):
     <p>AI will continue to transform industries and create new opportunities.</p>
   `
 }
+]
+
   
 ];
