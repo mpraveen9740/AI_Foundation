@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherMind | Artificial Intelligence, Machine Learning & Python Blog</title>
+  <meta name="description" content="AetherMind is a modern publication exploring cutting-edge AI trends, hands-on Machine Learning tutorials, Python programming projects, and technology career guidance.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="glass" id="main-header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="header-logo">
+        AetherMind<span class="logo-dot"></span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="#blog" class="nav-link" id="nav-link-blog">Blog</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <!-- Moon Icon (Dark theme active, click to change to Light theme) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light theme active, click to change to Dark theme) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dynamic Page Content Wrapper -->
+  <main id="app-content"></main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-logo-desc">
+        <h3 class="logo">AetherMind<span class="logo-dot"></span></h3>
+        <p>A professional journal exploring the frontiers of Artificial Intelligence, Machine Learning algorithms, Python software development, and modern engineering career paths.</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#blog" class="footer-link">All Articles</a></li>
+          <li><a href="#about" class="footer-link">About Publication</a></li>
+          <li><a href="#contact" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#category/AI" class="footer-link">Artificial Intelligence</a></li>
+          <li><a href="#category/Machine Learning" class="footer-link">Machine Learning</a></li>
+          <li><a href="#category/Python" class="footer-link">Python Programming</a></li>
+          <li><a href="#category/Technology" class="footer-link">Technology & Career</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Newsletter</h4>
+        <div class="newsletter-box">
+          <p>Subscribe to receive cutting-edge insights directly in your inbox.</p>
+          <form class="newsletter-form" id="footer-newsletter-form" novalidate>
+            <input type="email" placeholder="Your Email Address" class="newsletter-input" id="newsletter-email" required>
+            <button type="submit" class="btn btn-primary" id="newsletter-submit">Subscribe</button>
+            <div class="newsletter-success" id="newsletter-success-msg">✓ Subscription successful! Welcome aboard.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AetherMind. All rights reserved.</p>
+      <p>Designed for AI Engineers, ML Scientists, and Python Developers.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll to Top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==================== PAGE VIEW TEMPLATES ==================== -->
+
+  <!-- HOMEPAGE TEMPLATE -->
+  <template id="template-home">
+    <div class="page-view">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container">
+          <span class="hero-subtitle">Exploring the Future of Tech</span>
+          <h1 class="hero-title">Advancing Human Knowledge Through <span>Artificial Intelligence</span></h1>
+          <p class="hero-tagline">Deep-dive technical articles, comprehensive Python guides, Machine Learning tutorials, and career insights for engineering students.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem;">
+            <a href="#blog" class="btn btn-primary" id="hero-cta-explore">Explore Articles</a>
+            <a href="#about" class="btn btn-secondary" id="hero-cta-about">About Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Articles -->
+      <section class="container" style="margin-bottom: 4rem;">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Featured Publications</h2>
+          <a href="#blog" class="view-all-link">
+            See all articles
+            <svg style="width:1.1rem; height:1.1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+        <div class="featured-grid" id="home-featured-container">
+          <!-- Dynamic Featured Post Cards -->
+        </div>
+      </section>
+
+      <!-- Categories Quick Navigation -->
+      <section class="categories-section">
+        <div class="container">
+          <div class="section-title-wrap" style="justify-content: center; text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title">Browse by Domain</h2>
+          </div>
+          <div class="categories-grid" id="home-categories-grid">
+            <div class="category-card glass" data-category="AI">
+              <div class="category-icon">🤖</div>
+              <h3>Artificial Intelligence</h3>
+              <p>Agentic workflows & future trends</p>
+            </div>
+            <div class="category-card glass" data-category="Machine Learning">
+              <div class="category-icon">🧠</div>
+              <h3>Machine Learning</h3>
+              <p>Algorithms, math, & PyTorch models</p>
+            </div>
+            <div class="category-card glass" data-category="Python">
+              <div class="category-icon">🐍</div>
+              <h3>Python Programming</h3>
+              <p>Practical projects & modular scripts</p>
+            </div>
+            <div class="category-card glass" data-category="Technology">
+              <div class="category-icon">🚀</div>
+              <h3>Tech & Careers</h3>
+              <p>Roadmaps & guidance for students</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Posts Section -->
+      <section class="container" style="margin-bottom: 5rem;">
+        <div class="section-title-wrap">
+          <h2 class="section-title">Recent Insight Articles</h2>
+        </div>
+        <div class="recent-grid" id="home-recent-container">
+          <!-- Dynamic Recent Post Cards -->
+        </div>
+      </section>
+    </div>
+  </template>
+
+  <!-- BLOG DIRECTORY TEMPLATE -->
+  <template id="template-blog">
+    <div class="page-view container" style="padding-top: 2rem;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="hero-subtitle">AetherMind Catalog</span>
+        <h1 style="font-size: 2.5rem; margin-top: 0.5rem;">Knowledge Directory</h1>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0;">Search and filter our technical articles to find step-by-step guidance on your interests.</p>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="search-filter-container">
+        <div class="search-bar-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="blog-search-input" class="search-input" placeholder="Search by titles, concepts, keywords (e.g. PyTorch, smart home)...">
+        </div>
+        
+        <div class="filters-wrap">
+          <div class="filter-badges" id="blog-filter-badges">
+            <div class="filter-badge active" data-category="all">All Fields</div>
+            <div class="filter-badge" data-category="AI">AI</div>
+            <div class="filter-badge" data-category="Machine Learning">Machine Learning</div>
+            <div class="filter-badge" data-category="Python">Python</div>
+            <div class="filter-badge" data-category="Technology">Technology</div>
+          </div>
+          <span class="results-count" id="blog-results-count">Showing 4 articles</span>
+        </div>
+      </div>
+
+      <!-- Blog Grid Container -->
+      <div class="posts-list-grid" id="blog-posts-grid">
+        <!-- Dynamic Cards Inserted Here -->
+      </div>
+    </div>
+  </template>
+
+  <!-- POST DETAILS TEMPLATE -->
+  <template id="template-post-detail">
+    <div class="page-view container post-detail-container">
+      <a href="#blog" class="post-back-btn" id="post-back-button">
+        <svg style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back to Articles
+      </a>
+      
+      <article>
+        <header class="post-header">
+          <span class="post-detail-category" id="post-detail-category">AI</span>
+          <h1 class="post-detail-title" id="post-detail-title">Loading Article...</h1>
+          
+          <div class="post-detail-meta">
+            <div class="post-author-box">
+              <div class="post-author-avatar" id="post-detail-avatar">--</div>
+              <div class="post-author-info">
+                <h4 id="post-detail-author-name">Author Name</h4>
+                <p id="post-detail-author-role">Author Role</p>
+              </div>
+            </div>
+            
+            <div class="post-date-info">
+              <span id="post-detail-date">Date</span>
+              <span>•</span>
+              <span id="post-detail-readtime">Read time</span>
+            </div>
+          </div>
+        </header>
+        
+        <div class="post-cover-wrap">
+          <img src="" alt="Post cover image" id="post-detail-cover">
+        </div>
+        
+        <div class="post-body" id="post-detail-body">
+          <!-- Full Post content renders here -->
+        </div>
+      </article>
+
+      <div class="post-footer-actions">
+        <div>
+          <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Enjoyed this article?</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Share it with your colleagues and classmates.</p>
+        </div>
+        <div class="share-links">
+          <button class="share-btn" id="share-btn-twitter" aria-label="Share on Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></svg>
+          </button>
+          <button class="share-btn" id="share-btn-linkedin" aria-label="Share on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </button>
+          <button class="share-btn" id="share-btn-copy" aria-label="Copy Link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- ABOUT PAGE TEMPLATE -->
+  <template id="template-about">
+    <div class="page-view container about-container">
+      <header class="about-header">
+        <span class="hero-subtitle">Our Mission & Identity</span>
+        <h1 class="about-title">Publishing the Future of <span>AI and Engineering</span></h1>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0;">Demystifying complex structures, sharing practical tutorials, and charting engineering roadmaps.</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>About AetherMind</h2>
+          <p>AetherMind was established in 2026 to bridge the gap between academic theory and practical software engineering in Artificial Intelligence and Machine Learning.</p>
+          <p>Our goal is to create rich, technical, and easily understood guides, project templates, and blueprint roadmaps for computer science and engineering students navigating the rapidly evolving tech environment.</p>
+          <p>We focus on building a robust math foundation, mastering advanced Python architectures, applying Machine Learning algorithms, and guiding developers into impactful roles.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item glass">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Core Domains</div>
+            </div>
+            <div class="stat-item glass">
+              <div class="stat-number">10k+</div>
+              <div class="stat-label">Readers</div>
+            </div>
+            <div class="stat-item glass">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Free Content</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="about-image-card glass">
+            <div class="about-image-glow"></div>
+            <div class="about-avatar-symbol">AM</div>
+            <h3>AetherMind Labs</h3>
+            <p>Empowering the next generation of AI developers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- CONTACT PAGE TEMPLATE -->
+  <template id="template-contact">
+    <div class="page-view container contact-container">
+      <header class="contact-header">
+        <span class="hero-subtitle">Get In Touch</span>
+        <h1 class="contact-title">Let's Connect and <span>Collaborate</span></h1>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0;">Have feedback, general queries, or want to contribute an article? Fill out the form or write to us.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-info-column">
+          <div class="contact-info-card glass">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>Email Address</h3>
+                <p>contact@aethermind.dev</p>
+                <p>editorial@aethermind.dev</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-card glass">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-info-text">
+                <h3>Office Location</h3>
+                <p>Innovation Hub, CS Department</p>
+                <p>Metro Tech University campus</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-connect-box">
+            <h3>Connect on Social Media</h3>
+            <div class="social-connect-links">
+              <a href="#" class="social-connect-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="#" class="social-connect-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" class="social-connect-btn" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card glass">
+          <!-- Standard Form -->
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Smith" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Question about tutorial" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit-btn">Send Message</button>
+          </form>
+
+          <!-- Success Message Display -->
+          <div class="form-success-message" id="contact-success-msg">
+            <div class="success-icon-check">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. Our team will get back to you shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Data source files -->
+  <script src="posts.js"></script>
+  <!-- Main application script -->
+  <script src="app.js"></script>
+</body>
+</html>
