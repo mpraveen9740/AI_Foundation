@@ -521,5 +521,45 @@ class SimpleSelfAttention(nn.Module):
       <h2>Phase 4: Open Source and Networking</h2>
       <p>Showcase your expertise to potential employers by contributing to community libraries (Hugging Face, LangChain, PyTorch) or writing technical summaries of AI papers. Keep your GitHub profile active, share your project updates on LinkedIn, and attend local AI meetups and hackathons. Having a live portfolio of working, deployed projects will set you miles apart from other candidates.</p>
     `
-  }
+  },
+  {
+    
+  id: "future-of-ai",
+  title: "The Future of Artificial Intelligence",
+  excerpt: "Discover how AI is transforming the world.",
+  category: "AI",
+  date: "June 10, 2026",
+  readTime: "8 min read",
+  image: "assets/post_agentic_ai.png",
+  featured: false,
+
+  author: {
+    name: "Praveen Patil",
+    role: "AI Enthusiast",
+    avatar: "PP"
+  },
+
+  content: `
+    <p>Artificial Intelligence (AI) is one of the most transformative technologies of the modern era...</p>
+
+    <h2>What is Artificial Intelligence?</h2>
+    <p>AI refers to computer systems designed to simulate human intelligence...</p>
+
+    <h2>Applications of AI</h2>
+    <ul>
+      <li>Healthcare</li>
+      <li>Education</li>
+      <li>Finance</li>
+      <li>Cybersecurity</li>
+      <li>Robotics</li>
+    </ul>
+
+    <h2>Benefits of AI</h2>
+    <p>AI improves productivity, reduces errors, and automates repetitive tasks.</p>
+
+    <h2>Future of AI</h2>
+    <p>AI will continue to transform industries and create new opportunities.</p>
+  `
+}
+  
 ];
