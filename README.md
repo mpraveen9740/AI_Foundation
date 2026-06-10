@@ -47,3 +47,4 @@ To run and preview the blog website locally:
 
 3. **Open the browser**:
    Navigate to `http://localhost:8000` to interact with the blog!
+   website added
